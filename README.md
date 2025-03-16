@@ -25,7 +25,7 @@ This project is a tool that analyzes the tenses of article sentences written in 
   - 'Sentence Transformer' and 'GLiNER' are automatically downloaded when the code is executed.
   - The 'Sanza' Korean model is downloaded via 'stanza.download('ko')' within the code.
 
-## Instructions
+## Usage
 
 ### 1. Code execution
 Below is a basic usage example.
@@ -53,7 +53,7 @@ print("과거 시제:", past)
 print("현재 시제:", current)
 ```
 
-### Sample Output
+### 2. Example Output
 ```
 미래 시제: ['LG엔솔이 곧 완공될 랜싱 공장에서 설비 설치를 시작할 수 있을 것으로 예상했다']
 과거 시제: ['애플의 지난해 중국 시장 점유율은 15%로, 연간 기준으로 17% 감소했다.']
