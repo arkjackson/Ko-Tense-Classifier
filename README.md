@@ -2,7 +2,7 @@
 
 This project is a tool that analyzes the tenses of article sentences written in Korean and classifies them into future, past, and present tense. It analyzes the verbs, adjectives, and time expressions of a sentence by using the NLP libraries 'SentenceTransformer', 'Santa', and 'GLiNER'.
 
-## 주요 기능
+## Features
 
 - **Preprocessing**: Remove unnecessary elements such as e-mails, hashtags, links, copyright statements, etc
 - **Sentence analysis**: Extract verbs and adjectives from sentences and use them as the basis for determining the tense
@@ -63,7 +63,7 @@ print("현재 시제:", current)
 ## Restrictions
 
 - When using GPU, 'torch' and CUDA settings are required.
-- Time entity recognition relies on the accuracy of the 'GLNER' model.
+- Time entity recognition relies on the accuracy of the 'GLiNER' model.
 - There is a possibility of misclassification in complex sentence structures or non-standard Korean expressions.
   
 ## License
