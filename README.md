@@ -21,14 +21,6 @@ This project is a tool that analyzes the tenses of article sentences written in 
    pip install -r requirements.txt
    ```
 
-   `requirements.txt` 예시:
-   ```
-   sentence-transformers==2.2.2
-   stanza==1.5.0
-   gliner==0.0.6
-   torch==2.0.0  # GPU 지원 시 적절한 버전 설치 필요
-   ```
-
 3. **Download Model**
   - 'Sentence Transformer' and 'GLiNER' are automatically downloaded when the code is executed.
   - The 'Sanza' Korean model is downloaded via 'stanza.download('ko')' within the code.
