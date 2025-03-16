@@ -1,0 +1,4 @@
+# Verified behavior in Python 3.10 and later
+stanza==1.10.1
+gliner==0.2.13
+sentence-transformers==3.2.0
