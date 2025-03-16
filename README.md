@@ -44,9 +44,9 @@ from tense_classifier import preprocess_text, classify_tense
 # Sample Data
 article_date = "2025-03-16"
 sample_text = [
-    "올해 3분기 매출이 증가할 전망이다.",
-    "지난해 매출은 감소했다.",
-    "이날 주가는 상승 중이다."
+    "LG엔솔이 곧 완공될 랜싱 공장에서 설비 설치를 시작할 수 있을 것으로 예상했다",
+    "애플의 지난해 중국 시장 점유율은 15%로, 연간 기준으로 17% 감소했다.",
+    "업계에 따르면 국내 배터리 3사(LG에너지솔루션, 삼성SDI, SK온) 직원들의 현대차 이직이 계속 되고 있다."
 ]
 
 # Preprocessing
@@ -55,6 +55,7 @@ processed_text = preprocess_text(sample_text)
 # Classify Tense
 future, past, current = classify_tense(processed_text, article_date)
 
+# Output
 print("미래 시제:", future)
 print("과거 시제:", past)
 print("현재 시제:", current)
@@ -62,9 +63,9 @@ print("현재 시제:", current)
 
 ### Sample Output
 ```
-미래 시제: ['올해 3분기 매출이 증가할 전망이다.']
-과거 시제: ['지난해 매출은 감소했다.']
-현재 시제: ['이날 주가는 상승 중이다.']
+미래 시제: ['LG엔솔이 곧 완공될 랜싱 공장에서 설비 설치를 시작할 수 있을 것으로 예상했다']
+과거 시제: ['애플의 지난해 중국 시장 점유율은 15%로, 연간 기준으로 17% 감소했다.']
+현재 시제: ['업계에 따르면 국내 배터리 3사(LG에너지솔루션, 삼성SDI, SK온) 직원들의 현대차 이직이 계속 되고 있다.']
 ```
 
 ## Restrictions
