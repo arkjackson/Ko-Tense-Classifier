@@ -12,7 +12,7 @@ This project is a tool that analyzes the tenses of article sentences written in 
 
 1. **Repository clone**
    ```bash
-   git clone https://github.com/[your-username]/korean-tense-classifier.git
+   git clone https://github.com/arkjackson/korean-tense-classifier.git
    cd korean-tense-classifier
    ```
    
